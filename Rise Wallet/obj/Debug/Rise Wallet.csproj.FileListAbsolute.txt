@@ -1,0 +1,29 @@
+c:\users\hp15\documents\visual studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\Rise Wallet.exe.config
+c:\users\hp15\documents\visual studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\Rise Wallet.exe
+c:\users\hp15\documents\visual studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\Rise Wallet.pdb
+c:\users\hp15\documents\visual studio 2015\Projects\Rise Wallet\Rise Wallet\obj\Debug\Rise Wallet.csprojResolveAssemblyReference.cache
+c:\users\hp15\documents\visual studio 2015\Projects\Rise Wallet\Rise Wallet\obj\Debug\Rise_Wallet.Properties.Resources.resources
+c:\users\hp15\documents\visual studio 2015\Projects\Rise Wallet\Rise Wallet\obj\Debug\Rise Wallet.csproj.GenerateResource.Cache
+c:\users\hp15\documents\visual studio 2015\Projects\Rise Wallet\Rise Wallet\obj\Debug\Rise Wallet.exe
+c:\users\hp15\documents\visual studio 2015\Projects\Rise Wallet\Rise Wallet\obj\Debug\Rise Wallet.pdb
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\obj\Debug\Rise_Wallet.Form2.resources
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\Chaos.NaCl.PCL.dll
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\RiseSharp.Core.dll
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\RiseSharp.Tests.dll
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\NBitcoin.dll
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\NBitcoin.BouncyCastle.dll
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\nunit.framework.dll
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\Chaos.NaCl.PCL.pdb
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\RiseSharp.Core.pdb
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\RiseSharp.Tests.pdb
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\nunit.framework.xml
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\obj\Debug\Rise_Wallet.Form3.resources
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\obj\Debug\Rise_Wallet.Form1.resources
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\Rise Wallet.exe.manifest
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\Rise Wallet.application
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\obj\Debug\Rise Wallet.exe.manifest
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\obj\Debug\Rise Wallet.application
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\crypto.dll
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\crypto.pdb
+C:\Users\hp15\Documents\Visual Studio 2015\Projects\Rise Wallet\Rise Wallet\bin\Debug\crypto.xml
