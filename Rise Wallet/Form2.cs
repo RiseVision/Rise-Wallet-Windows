@@ -1,4 +1,4 @@
-﻿using RiseSharp.Core.Api;
+using RiseSharp.Core.Api;
 using RiseSharp.Core.Api.Messages.Node;
 using RiseSharp.Core.Api.Models;
 using RiseSharp.Core.Helpers;
@@ -89,7 +89,7 @@ namespace Rise_Wallet
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Undergoing Development , This will have more info about things in this wallet");
+            MessageBox.Show("Undergoing Development , This will have more info about things in this wallet\n\nThis Wallet was developed in C# Using RiseSharp SDK.");
         }
 
         private async void button1_Click(object sender, EventArgs e)
@@ -111,7 +111,15 @@ namespace Rise_Wallet
             {
                 MessageBox.Show(ex.Message);
             }
-        }
+
+                    // gets account balance from other Rise nodes,  /api/accounts/getBalance
+                    var response = await _api.GetAccountBalanceAsync(new AccountRequest
+
+                    {
+                        Address = Rise_Wallet.Properties.Settings.Default.Textbox
+                });
+                    label7.Text= (response.Balance/ Math.Pow(10,8)).ToString();
+            }
 
         private void walletPassphraseToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -126,6 +134,12 @@ namespace Rise_Wallet
 
         private async void button2_Click(object sender, EventArgs e)
         {
+            IRiseNodeApi _api = new RiseNodeApi(new ApiInfo
+            {
+                //Host = "yourhostip", // This can be any Rise node in the network, default is https://wallet.rise.vision
+                //Port = "port"
+                UseHttps = true
+            });
             if (textBox3.Text.Length > 10)
             {
                 RiseSharp.Core.Helpers.AccountHelper.GetAccount(textBox1.Text);
@@ -136,8 +150,34 @@ namespace Rise_Wallet
                 button2.Hide();
                 button3.Hide();
                 label3.Text = RiseSharp.Core.Helpers.CryptoHelper.GetAddress(textBox3.Text).IdString;
-               
-            }
+
+            var response = await _api.GetAccountBalanceAsync(new AccountRequest
+
+            {
+                Address = Rise_Wallet.Properties.Settings.Default.Textbox
+            });
+            label7.Text = (response.Balance / Math.Pow(10, 8)).ToString();
+
+
+        /* TransactionsRequest x = await _api.GetTransactionsAsync(new TransactionsRequest
+         {
+
+         });
+         SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+         saveFileDialog1.Filter = "Text Files|*.txt";
+         saveFileDialog1.Title = "Save your Wallet Secret Passphrase";
+         saveFileDialog1.ShowDialog();
+         System.IO.StreamWriter file = new System.IO.StreamWriter(saveFileDialog1.FileName);
+         file.WriteLine();
+         file.Close();
+         textBox3.Text = secret;
+         textBox3.ReadOnly = true;
+         button2.Hide();
+         button3.Hide();
+         label3.Text = RiseSharp.Core.Helpers.CryptoHelper.GetAddress(textBox3.Text).IdString;
+         */
+
+    }
             //else if (textBox3.Text.Length < 0)
             //    {
             //    //label1.Equals("Fail");
@@ -148,8 +188,9 @@ namespace Rise_Wallet
             {
                 MessageBox.Show("An Error has occurred");
             }
+            
 
-        }
+    }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -183,6 +224,7 @@ namespace Rise_Wallet
             button2.Show();
             button3.Show();
             label3.ResetText();
+            label7.ResetText();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -201,23 +243,15 @@ namespace Rise_Wallet
         }
 
         private async void label7_MouseClick(object sender, MouseEventArgs e)
-            
         {
-            IRiseNodeApi _api = new RiseNodeApi(new ApiInfo
-            {
-                //Host = "yourhostip", // This can be any Rise node in the network, default is https://wallet.rise.vision
-                //Port = "port"
-                UseHttps = true
-            });
-            var response = await _api.GetAccountBalanceAsync(new AccountRequest
 
-            {
-                Address = RiseSharp.Core.Helpers.CryptoHelper.GetAddress(textBox3.Text).IdString
-            });
-             //var amt1 = Convert.ToDouble(response);
-             //var damt = amt1 / Math.Pow(10, 8);
-             label7.Text = Convert.ToDouble(response.Balance.ToString());
         }
+       /* {
+            
+            //var amt1 = Convert.ToDouble(response);
+             //var damt = amt1 / Math.Pow(10, 8);
+             label7.Text = response.ToString();
+        }*/
 
         private void label7_Click(object sender, EventArgs e)
         {
